@@ -1,0 +1,59 @@
+name: employee_attendance_app
+description: A simple app for employee attendance tracking.
+
+publish_to: "none" # Remove this line if you are publishing to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # For Firebase (Authentication, Firestore)
+  firebase_core: ^2.15.0
+  firebase_auth: ^4.2.3
+  cloud_firestore: ^4.5.0
+
+  # For location and geofencing
+  geolocator: ^9.1.1
+  geofencing: ^2.0.0
+
+  # For handling HTTP requests (sending data to backend)
+  http: ^0.15.0
+
+  # For handling date and time
+  intl: ^0.18.1
+
+  # For showing charts (Employee performance)
+  syncfusion_flutter_charts: ^20.1.48
+
+  # For splash screen (optional)
+  flutter_native_splash: ^2.3.2
+
+  # For state management (provider or riverpod)
+  provider: ^6.1.5 # Updated version
+
+  # For local notifications (optional)
+  flutter_local_notifications: ^13.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # For code formatting and linting
+  lint: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
